@@ -13,5 +13,6 @@ COPY --from=builder \
 
 WORKDIR /app
 RUN mkdir ./upload
+VOLUME ["/app/upload"]
 
 CMD /usr/local/bin/pastebin
